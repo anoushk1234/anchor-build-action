@@ -11,7 +11,7 @@ inputs:
     default: ''
 runs:
   using: 'docker'
-  image: 'docker://mrgnlabs/solana-dev:0.0.2-alpha'
+  image: 'projectserum/build:v0.24.2'
   entrypoint: shell-exec
   args: 
     - 'anchor build ${{ inputs.args }}'
